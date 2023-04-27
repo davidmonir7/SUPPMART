@@ -79,7 +79,7 @@
 <div class="services" id="services">
 <div class="container">
     <h2 class="special-heading"> Sevices </h2>
-    <p> Don't be busy, be productive </p>
+    <p> Don't be busy, be productive daviddddddddddddddd</p>
     <div class="service-content">
     <!--first column-->
     <div class="col">
