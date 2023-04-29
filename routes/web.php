@@ -20,10 +20,8 @@ use App\Http\Controllers\Site\ProductController;
 
 Auth::routes();
 
-// Route::get(uri:'/',[HomeController::class, 'index'])->name(name:'index');
-Route::get('/index',[\App\Http\Controllers\Site\HomeController::class, 'index'])->name('index');
-Route::get('/product/{id}',[\App\Http\Controllers\Site\ProductController::class, 'show'])->name('product.show');
+Route::get('/index',[HomeController::class, 'index'])->name('index');
+Route::get('/product/{id}',[ProductController::class, 'show'])->name('product.show');
 
-// Route::get('scraper', [App\Http\Controllers\ScraperController::class, 'scraper'])->name('scraper');
-// Route::get(uri: 'scraper', ["App\Http\Controllers\ScraperController"::class, 'scraper'])->name(name:'scraper');
+
 // include('admin. php'); /* to include admin route or  badal go to route servce provider mohem  */
