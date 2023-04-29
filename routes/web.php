@@ -2,8 +2,8 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-// use App\Http\Controllers\Site\HomeController;
-// use App\Http\Controllers\Site\ProductController;
+use App\Http\Controllers\Site\HomeController;
+use App\Http\Controllers\Site\ProductController;
 
 
 /*
@@ -24,5 +24,6 @@ Auth::routes();
 Route::get('/index',[\App\Http\Controllers\Site\HomeController::class, 'index'])->name('index');
 Route::get('/product/{id}',[\App\Http\Controllers\Site\ProductController::class, 'show'])->name('product.show');
 
-
+// Route::get('scraper', [App\Http\Controllers\ScraperController::class, 'scraper'])->name('scraper');
+// Route::get(uri: 'scraper', ["App\Http\Controllers\ScraperController"::class, 'scraper'])->name(name:'scraper');
 // include('admin. php'); /* to include admin route or  badal go to route servce provider mohem  */
