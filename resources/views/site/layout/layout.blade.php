@@ -89,7 +89,7 @@
     {{-- <script src="{{asset('site')}}/assets/js/script.js"></script> --}}
     <script src="{{asset('site')}}/js/bootstrap.bundle.min.js"></script>
     <script src="{{asset('site')}}/js/all.min.js"></script>
-
+<h1>zeinab </h1>
     <script>
         $(window).on('load', function () {
             setTimeout(function () {
