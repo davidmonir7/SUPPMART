@@ -1,12 +1,7 @@
 @extends('site.layout.layout')
+
 @section('body')
 
-<html lang="en">
-<head>
-    
-</head>
-<body>
-    
     <!-- start header -->
     {{-- <header class="p-3 bg-white text-black sticky-top">
     <div class="container">
@@ -66,7 +61,10 @@
     </div>
     </header>
     <!-- end header --> --}}
-    <!-- start landing -->
+ <html>  <!-- start landing -->
+<body>
+    
+
     <div class="landing">
         <div class="overlay"></div>
             <div class="text">
@@ -160,7 +158,7 @@
             </div>
         </div>
         <div class="box">
-            <img src="{{asset('site')}}images/Canson Bloc Aqu.Mont.300g.jpg" alt="">
+            <img src="{{asset('site')}}\images\Canson Bloc Aqu.Mont.300g.jpg" alt="">
             <div class="content">
                 <h3> Test title</h3>
                 <p>price:</p>
@@ -274,6 +272,7 @@
     </div>
     </div>
     </div>
+
     <!-- end contact-->
     <!-- start footer -->
    <div class="footer">
@@ -291,9 +290,9 @@
    <!-- end footer -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
-    @endsection
-</body>
-</html>
+ 
+ @endsection
+
 
 
 

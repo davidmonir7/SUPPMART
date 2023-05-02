@@ -15,13 +15,13 @@
 </head>
 
 <body>
-
+   
      <!-- start header -->
      <header class="p-3 bg-white text-black sticky-top">
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             </a>
-            <img src="{{asset('site')}}assets\images\logo.png" alt="" class="rounded-circle px-2" style="width: 50px;" >
+            <img src="E:\xamp\htdocs\SUPPMART\public\site\assets\images\logo.png" alt="" class="rounded-circle px-2" style="width: 50px;" >
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                 <li><a href="#" class="nav-link px-2 text-black link-warning " onclick="document.location='index.html'">Home</a></li>
                 <li><a href="#services" class="nav-link px-2 text-black link-warning">Services</a></li>
@@ -65,8 +65,8 @@
             </ul>
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
                 <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
-            </form>
-
+         
+            
             <div class="text-end">
                 <button type="button" class="btn btn-outline-dark me-2" onclick="document.location='login.html'">Login</button>
                 <button type="button" class="btn btn-warning" onclick="document.location='Sign-up.html'">Sign-up</button>
@@ -80,23 +80,10 @@
     <script src="{{asset('site')}}public\site\assets\js\bootstrap.bundle.min.js"></script>
     <script src="{{asset('site')}}public\site\assets\js\all.min.js"></script>
 
-    <script>
-        $(window).on('load', function () {
-            setTimeout(function () {
-                $('#exampleModal').modal('show');
-            }, 2500);
-        });
 
-        function openSearch() {
-            document.getElementById("search-overlay").style.display = "block";
-        }
-
-        function closeSearch() {
-            document.getElementById("search-overlay").style.display = "none";
-        }
-    </script>
-
-
+<div class="page-body">
+    @yield('body')
+</div>
 
 </body>
 </html>
