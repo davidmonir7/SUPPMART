@@ -1,7 +1,5 @@
 @extends('site.layout.layout')
 @section('body')
-
-
 <body>
     <!-- start header -->
     <header class="p-3 bg-white text-black sticky-top">
@@ -94,14 +92,6 @@
             </p>
         </div>
         </div>
-        <!-- <div class="srv">
-            <div class="text">
-            <h3> customize packages </h3>
-            <p>
-                Process of enhancing user satisfaction with a product by improving the usability, accessibility, and pleasure provided in the interaction.
-            </p>
-            </div>
-        </div> -->
     </div>
     <!-- seconed column-->
     <div class="col">
@@ -113,16 +103,6 @@
                 </p>
             </div>
             </div>
-
-            <!-- <div class="srv">
-                <div class="text">
-                <h3> fast delivery </h3>
-                <p>
-                    Web development is a broad term for the work involved in developing a web site for the Internet or an intranet.
-                </p>
-                </div>
-            </div> -->
-    </div>
     <!-- third column-->
             <div class="col">
             <div class="image image-col">
