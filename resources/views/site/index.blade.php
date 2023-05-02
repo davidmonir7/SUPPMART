@@ -1,10 +1,14 @@
 @extends('site.layout.layout')
 @section('body')
 
-
+<html lang="en">
+<head>
+    
+</head>
 <body>
+    
     <!-- start header -->
-    <header class="p-3 bg-white text-black sticky-top">
+    {{-- <header class="p-3 bg-white text-black sticky-top">
     <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         </a>
@@ -61,7 +65,7 @@
         </div>
     </div>
     </header>
-    <!-- end header -->
+    <!-- end header --> --}}
     <!-- start landing -->
     <div class="landing">
         <div class="overlay"></div>
@@ -291,4 +295,9 @@
 </html>
 
 
-</body>
+
+
+
+
+
+
