@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SuppMart</title>
-    <link rel="stylesheet" href="{{asset('site')}}css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{asset('site')}}css/all.min.css">
-    <link rel="stylesheet" href="{{asset('site')}}css/supp.css">
+    <link rel="stylesheet" href="{{asset('site')}}assets\css\bootstrap.min.css">
+    <link rel="stylesheet" href="{{asset('site')}}assets\css\all.min.css">
+    <link rel="stylesheet" href="{{asset('site')}}assets\css\supp.css">
     <link rel="preconnect" href="{{asset('site')}}https://fonts.googleapis.com">
     <link rel="preconnect" href="{{asset('site')}}https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             </a>
-            <img src="{{asset('site')}}images/logo.png" alt="" class="rounded-circle px-2" style="width: 50px;" >
+            <img src="{{asset('site')}}assets\images\logo.png" alt="" class="rounded-circle px-2" style="width: 50px;" >
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                 <li><a href="#" class="nav-link px-2 text-black link-warning " onclick="document.location='index.html'">Home</a></li>
                 <li><a href="#services" class="nav-link px-2 text-black link-warning">Services</a></li>
@@ -77,8 +77,8 @@
         <!-- end header -->
 
 
-    <script src="{{asset('site')}}/js/bootstrap.bundle.min.js"></script>
-    <script src="{{asset('site')}}/js/all.min.js"></script>
+    <script src="{{asset('site')}}public\site\assets\js\bootstrap.bundle.min.js"></script>
+    <script src="{{asset('site')}}public\site\assets\js\all.min.js"></script>
 
     <script>
         $(window).on('load', function () {
