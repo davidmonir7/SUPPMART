@@ -6,6 +6,11 @@
     "license": "MIT",
     "require": {
         "php": "^8.0",
+<<<<<<< HEAD
+=======
+        "darryldecode/cart": "^4.2",
+        "doctrine/dbal": "^3.6",
+>>>>>>> 4d8198b72edb81cf1ba5c3dd02d1956ed137afb9
         "fruitcake/laravel-cors": "^2.0.5",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^9.0",
