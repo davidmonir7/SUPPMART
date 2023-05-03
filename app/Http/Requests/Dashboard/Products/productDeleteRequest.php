@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Requests\Dashboard\Categories;
+namespace App\Http\Requests\Dashboard\products;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class CategoryDeleteRequest extends FormRequest
+class productDeleteRequest extends FormRequest
 {
     /**
      * Get the validation rules that apply to the request.

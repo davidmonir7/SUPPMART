@@ -144,30 +144,35 @@
     <h1 class="special-heading">products</h1>
     <p>get ready to create</p>
     <div class="section-1">
-        <h1> </h1>
+   @foreach ($products as $product) 
     <div class="container">
         <div class="box">
-            <img src="{{asset('site')}}images/Chameleon Deluxe Marker Set.jpg" alt="">
+            <a href="{{route('product.show',$product->id)}}">
+            <img src="{{($product->image)}}" alt=""></a>
+            <div class="content">
+                <h3> Test title</h3>
+                <p>{{$product->price}}</p>
+             
+            </div>
+            <div class="info">
+                <a href="{{route('product.show',$product->id)}}"> Add to cart </a>
+                <i class="fas fa-long-arrow-alt-right"></i>
+            </div>
+        </div>
+    @endforeach
+        {{-- <div class="box">
+            <a href="">
+            <img src="{{($product->image)}}" alt=""></a>
             <div class="content">
                 <h3> Test title</h3>
                 <p>price:</p>
             </div>
             <div class="info">
-                <a href="checkout.html"> Add to cart </a>
+                <a href="{{route('product.show',$product->id)}}"> Add to cart </a>
                 <i class="fas fa-long-arrow-alt-right"></i>
             </div>
         </div>
-        <div class="box">
-            <img src="{{asset('site')}}\images\Canson Bloc Aqu.Mont.300g.jpg" alt="">
-            <div class="content">
-                <h3> Test title</h3>
-                <p>price:</p>
-            </div>
-            <div class="info">
-                <a href="checkout.html"> Add to cart </a>
-                <i class="fas fa-long-arrow-alt-right"></i>
-            </div>
-        </div>
+        @endforeach
         <div class="box">
             <img src="images/0720390009000.jpg" alt="">
             <div class="content">
@@ -223,9 +228,10 @@
                 <i class="fas fa-long-arrow-alt-right"></i>
             </div>
         </div>
+   
     </div>
     </div>
-</div>
+</div> --}}
 
 <!-- start about section -->
 <div class="about" id="about">

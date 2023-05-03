@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SuppMart</title>
-    <link rel="stylesheet" href="{{asset('site')}}assets\css\bootstrap.min.css">
-    <link rel="stylesheet" href="{{asset('site')}}assets\css\all.min.css">
+    <link rel="stylesheet" href="{{asset('site')}}public\site\assets\css\bootstrap.min.css">
+    <link rel="stylesheet" href="{{asset('site')}}css\all.min.css">
     <link rel="stylesheet" href="{{asset('site')}}assets\css\supp.css">
     <link rel="preconnect" href="{{asset('site')}}https://fonts.googleapis.com">
     <link rel="preconnect" href="{{asset('site')}}https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,7 @@
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             </a>
-            <img src="E:\xamp\htdocs\SUPPMART\public\site\assets\images\logo.png" alt="" class="rounded-circle px-2" style="width: 50px;" >
+            <img src="{{ asset('images/logo.jpg') }} " alt="" class="rounded-circle px-2" style="width: 50px;" >
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                 <li><a href="#" class="nav-link px-2 text-black link-warning " onclick="document.location='index.html'">Home</a></li>
                 <li><a href="#services" class="nav-link px-2 text-black link-warning">Services</a></li>
@@ -79,7 +79,9 @@
 
     <script src="{{asset('site')}}public\site\assets\js\bootstrap.bundle.min.js"></script>
     <script src="{{asset('site')}}public\site\assets\js\all.min.js"></script>
-
+    <script>
+        $('.dropify').dropify();
+    </script>
 
 <div class="page-body">
     @yield('body')

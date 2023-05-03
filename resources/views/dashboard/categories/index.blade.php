@@ -157,9 +157,6 @@
                             @csrf
                             <input type="hidden" name="id" id="id">
                         </div>
-
-
-
                     </div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">اغلاق</button>
