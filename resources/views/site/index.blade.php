@@ -1,9 +1,14 @@
 @extends('site.layout.layout')
+
 @section('body')
+<<<<<<< HEAD
 <!doctype html>
 <body>
+=======
+
+>>>>>>> 20b7ca1fc5246850e132bb56b47642182ac9c66d
     <!-- start header -->
-    <header class="p-3 bg-white text-black sticky-top">
+    {{-- <header class="p-3 bg-white text-black sticky-top">
     <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         </a>
@@ -60,8 +65,11 @@
         </div>
     </div>
     </header>
-    <!-- end header -->
-    <!-- start landing -->
+    <!-- end header --> --}}
+ <html>  <!-- start landing -->
+<body>
+    
+
     <div class="landing">
         <div class="overlay"></div>
             <div class="text">
@@ -93,6 +101,14 @@
             </p>
         </div>
         </div>
+        <!-- <div class="srv">
+            <div class="text">
+            <h3> customize packages </h3>
+            <p>
+                Process of enhancing user satisfaction with a product by improving the usability, accessibility, and pleasure provided in the interaction.
+            </p>
+            </div>
+        </div> -->
     </div>
     <!-- seconed column-->
     <div class="col">
@@ -104,6 +120,16 @@
                 </p>
             </div>
             </div>
+
+            <!-- <div class="srv">
+                <div class="text">
+                <h3> fast delivery </h3>
+                <p>
+                    Web development is a broad term for the work involved in developing a web site for the Internet or an intranet.
+                </p>
+                </div>
+            </div> -->
+    </div>
     <!-- third column-->
             <div class="col">
             <div class="image image-col">
@@ -137,7 +163,7 @@
             </div>
         </div>
         <div class="box">
-            <img src="{{asset('site')}}images/Canson Bloc Aqu.Mont.300g.jpg" alt="">
+            <img src="{{asset('site')}}\images\Canson Bloc Aqu.Mont.300g.jpg" alt="">
             <div class="content">
                 <h3> Test title</h3>
                 <p>price:</p>
@@ -251,6 +277,7 @@
     </div>
     </div>
     </div>
+
     <!-- end contact-->
     <!-- start footer -->
    <div class="footer">
@@ -268,5 +295,19 @@
     <!-- end footer -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
+<<<<<<< HEAD
 </body>
 </html>
+=======
+ 
+ @endsection
+
+
+
+
+
+
+
+
+
+>>>>>>> 20b7ca1fc5246850e132bb56b47642182ac9c66d
