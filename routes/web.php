@@ -1,10 +1,6 @@
 <?php
 
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Site\HomeController;
-use App\Http\Controllers\Site\ProductController;
-
 
 /*
 |--------------------------------------------------------------------------
@@ -17,11 +13,6 @@ use App\Http\Controllers\Site\ProductController;
 |
 */
 
-
-Auth::routes();
-
-Route::get('/index',[HomeController::class, 'index'])->name('index');
-Route::get('/product/{id}',[ProductController::class, 'show'])->name('product.show');
-
-
-// include('admin. php'); /* to include admin route or  badal go to route servce provider mohem  */
+Route::get('/', function () {
+    return view('welcome');
+});

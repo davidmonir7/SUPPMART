@@ -1,5 +1,6 @@
 @extends('site.layout.layout')
 @section('body')
+<!doctype html>
 <body>
     <!-- start header -->
     <header class="p-3 bg-white text-black sticky-top">
@@ -262,13 +263,10 @@
         <i class="fa-brands fa-facebook-f"></i>
         <i class="fa-brands fa-twitter"></i>
     </div>
-      </div>
-   </div>
-   <!-- end footer -->
+    </div>
+    </div>
+    <!-- end footer -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
 </body>
 </html>
-
-
-</body>

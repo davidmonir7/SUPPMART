@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+    <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,11 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
-
 <body>
-
-     <!-- start header -->
-     <header class="p-3 bg-white text-black sticky-top">
+    <!-- start header -->
+    <header class="p-3 bg-white text-black sticky-top">
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             </a>
@@ -66,7 +65,6 @@
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
                 <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
             </form>
-
             <div class="text-end">
                 <button type="button" class="btn btn-outline-dark me-2" onclick="document.location='login.html'">Login</button>
                 <button type="button" class="btn btn-warning" onclick="document.location='Sign-up.html'">Sign-up</button>
@@ -75,28 +73,20 @@
         </div>
         </header>
         <!-- end header -->
-
-
     <script src="{{asset('site')}}/js/bootstrap.bundle.min.js"></script>
     <script src="{{asset('site')}}/js/all.min.js"></script>
-
     <script>
         $(window).on('load', function () {
             setTimeout(function () {
                 $('#exampleModal').modal('show');
             }, 2500);
         });
-
         function openSearch() {
             document.getElementById("search-overlay").style.display = "block";
         }
-
         function closeSearch() {
             document.getElementById("search-overlay").style.display = "none";
         }
     </script>
-
-
-
 </body>
 </html>
