@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Dashboard\products\productDeleteRequest;
 use App\Http\Requests\Dashboard\Products\StoreProductRequest;
 use App\Repositorties\CategoryRepository;
 use App\Repositorties\ProductRepository;
@@ -68,11 +67,6 @@ class ProductController extends Controller
        return redirect()->route('dashboard.products.index');
     }
 
-    public function delete(productDeleteRequest $request)
-    {
-        $this->productService->delete($request->validated());
-        return redirect()->route('dashboard.products.index');
-    }
     
     public function destroy($id)
     {
