@@ -295,7 +295,8 @@
     </div>
     </div>
     <!-- end footer -->
-    
+    <script src="{{ asset('dashboard') }}/assets/site/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ asset('dashboard') }}/assets/site/js/all.min.js"></script>
 
 </body>
 </html>
