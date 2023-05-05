@@ -1,18 +1,25 @@
-@extends('site.layout.layout')
-
-@section('body')
-<<<<<<< HEAD
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuppMart</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/supp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
 <body>
-=======
-
->>>>>>> 20b7ca1fc5246850e132bb56b47642182ac9c66d
     <!-- start header -->
-    {{-- <header class="p-3 bg-white text-black sticky-top">
+    <header class="p-3 bg-white text-black sticky-top">
     <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         </a>
-        <img src="{{asset('site')}}images/logo.png" alt="" class="rounded-circle px-2" style="width: 50px;" >
+        <img src="images/logo.png" alt="" class="rounded-circle px-2" style="width: 50px;" >
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
             <li><a href="#" class="nav-link px-2 text-black link-warning " onclick="document.location='index.html'">Home</a></li>
             <li><a href="#services" class="nav-link px-2 text-black link-warning">Services</a></li>
@@ -65,11 +72,8 @@
         </div>
     </div>
     </header>
-    <!-- end header --> --}}
- <html>  <!-- start landing -->
-<body>
-    
-
+    <!-- end header -->
+    <!-- start landing -->
     <div class="landing">
         <div class="overlay"></div>
             <div class="text">
@@ -101,14 +105,6 @@
             </p>
         </div>
         </div>
-        <!-- <div class="srv">
-            <div class="text">
-            <h3> customize packages </h3>
-            <p>
-                Process of enhancing user satisfaction with a product by improving the usability, accessibility, and pleasure provided in the interaction.
-            </p>
-            </div>
-        </div> -->
     </div>
     <!-- seconed column-->
     <div class="col">
@@ -120,20 +116,11 @@
                 </p>
             </div>
             </div>
-
-            <!-- <div class="srv">
-                <div class="text">
-                <h3> fast delivery </h3>
-                <p>
-                    Web development is a broad term for the work involved in developing a web site for the Internet or an intranet.
-                </p>
-                </div>
-            </div> -->
     </div>
     <!-- third column-->
             <div class="col">
             <div class="image image-col">
-                <img src="{{asset('site')}}images/photo_2023-03-11_18-02-09.jpg" alt="">
+                <img src="images/photo_2023-03-11_18-02-09.jpg" alt="">
             </div>
             </div>
         <!-- end services-->
@@ -143,101 +130,72 @@
 </div>
 </div>
 <!--end sevices section-->
-
 <!-- start products -->
-<div class="products" id="products">
-    <h1 class="special-heading">products</h1>
-    <p>get ready to create</p>
-    <div class="section-1">
-   @foreach ($products as $product) 
-    <div class="container">
-        <div class="box">
-            <a href="{{route('product.show',$product->id)}}">
-            <img src="{{($product->image)}}" alt=""></a>
-            <div class="content">
-                <h3> Test title</h3>
-                <p>{{$product->price}}</p>
-             
+  <div class="products" id="products">
+        <h1 class="special-heading">products</h1>
+        <p>get ready to create</p>
+        <div class="section-1">
+            <h1> </h1>
+        <div class="container">
+            <div class="box">
+                <img src="images/Chameleon Deluxe Marker Set.jpg" alt="">
+                <div class="content">
+                    <h3> Test title</h3>
+                    <p>price:</p>
+                </div>
+                <div class="info">
+                    <a href="checkout.html"> Add to cart </a>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
             </div>
-            <div class="info">
-                <a href="{{route('product.show',$product->id)}}"> Add to cart </a>
-                <i class="fas fa-long-arrow-alt-right"></i>
+            <div class="box">
+                <img src="images/Canson Bloc Aqu.Mont.300g.jpg" alt="">
+                <div class="content">
+                    <h3> Test title</h3>
+                    <p>price:</p>
+                </div>
+                <div class="info">
+                    <a href="checkout.html"> Add to cart </a>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
             </div>
-        </div>
-    @endforeach
-        {{-- <div class="box">
-            <a href="">
-            <img src="{{($product->image)}}" alt=""></a>
-            <div class="content">
-                <h3> Test title</h3>
-                <p>price:</p>
+            <div class="box">
+                <img src="images/0720390009000.jpg" alt="">
+                <div class="content">
+                    <h3> Test title</h3>
+                    <p>price:</p>
+                </div>
+                <div class="info">
+                    <a href="checkout.html"> Add to cart </a>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
             </div>
-            <div class="info">
-                <a href="{{route('product.show',$product->id)}}"> Add to cart </a>
-                <i class="fas fa-long-arrow-alt-right"></i>
+            <div class="box">
+                <img src="images/pencil-new.jpg" alt="">
+                <div class="content">
+                    <h3> Faber-Castell pencil </h3>
+                    <p>price:</p>
+                </div>
+                <div class="info">
+                    <a href="checkout.html"> Add to cart </a>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
             </div>
-        </div>
-        @endforeach
-        <div class="box">
-            <img src="images/0720390009000.jpg" alt="">
-            <div class="content">
-                <h3> Test title</h3>
-                <p>price:</p>
-            </div>
-            <div class="info">
-                <a href="checkout.html"> Add to cart </a>
-                <i class="fas fa-long-arrow-alt-right"></i>
-            </div>
-        </div>
-        <div class="box">
-            <img src="images/pencil-new.jpg" alt="">
-            <div class="content">
-                <h3> Faber-Castell pencil </h3>
-                <p>price:</p>
-            </div>
-            <div class="info">
-                <a href="checkout.html"> Add to cart </a>
-                <i class="fas fa-long-arrow-alt-right"></i>
-            </div>
-        </div>
-        <div class="box">
-            <img src="images/cat-05.jpg" alt="">
-            <div class="content">
-                <h3> Test title</h3>
-                <p>price:</p>
-            </div>
-            <div class="info">
-                <a href="checkout.html"> Add to cart </a>
-                <i class="fas fa-long-arrow-alt-right"></i>
+            <div class="box">
+                <img src="images/cat-05.jpg" alt="">
+                <div class="content">
+                    <h3> Test title</h3>
+                    <p>price:</p>
+                </div>
+                <div class="info">
+                    <a href="checkout.html"> Add to cart </a>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
             </div>
         </div>
-        <div class="box">
-            <img src="images/cat-06.jpg" alt="">
-            <div class="content">
-                <h3> Test title</h3>
-                <p>price:</p>
-            </div>
-            <div class="info">
-                <a href="checkout.html"> Add to cart </a>
-                <i class="fas fa-long-arrow-alt-right"></i>
-            </div>
         </div>
-        <div class="box">
-            <img src="images/cat-07.jpg" alt="">
-            <div class="content">
-                <h3> Test title</h3>
-                <p>price:</p>
-            </div>
-            <div class="info">
-                <a href="checkout.html"> Add to cart </a>
-                <i class="fas fa-long-arrow-alt-right"></i>
-            </div>
-        </div>
-   
     </div>
-    </div>
-</div> --}}
-
+<!-- end products -->
 <!-- start about section -->
 <div class="about" id="about">
     <div class="container">
@@ -256,7 +214,6 @@
         </div>
     </div>
     </div>
-
     <!-- start contact-->
     <div class="contact" id="contact">
     <div class="container">
@@ -283,7 +240,6 @@
     </div>
     </div>
     </div>
-
     <!-- end contact-->
     <!-- start footer -->
    <div class="footer">
@@ -296,24 +252,10 @@
         <i class="fa-brands fa-facebook-f"></i>
         <i class="fa-brands fa-twitter"></i>
     </div>
-    </div>
-    </div>
-    <!-- end footer -->
+      </div>
+   </div>
+   <!-- end footer -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
-<<<<<<< HEAD
 </body>
 </html>
-=======
- 
- @endsection
-
-
-
-
-
-
-
-
-
->>>>>>> 20b7ca1fc5246850e132bb56b47642182ac9c66d
