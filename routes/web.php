@@ -1,6 +1,10 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Site\HomeController;
+use App\Http\Controllers\Site\ProductController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,13 +17,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    // return view('dashboard.settings.index');
-})->name('index');
+// include('admin. php');
+// Route::get('/', function () {
+//     return view('site.index');
+// })->name('index');
 
 Auth::routes();
 
-// Route::get(uri:'/', [\App\Http\Controllers\site\HomeController::class,'index'])->name(name'index');
+Route::get('/index',[HomeController::class, 'index'])->name('index');
+Route::get('/product/{id}',[ProductController::class, 'show'])->name('product.show');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-
-// include('admin. php'); /* to include admin route or  badal go to route servce provider mohem  */
+ /* to include admin route or  badal go to route servce provider mohem  */
