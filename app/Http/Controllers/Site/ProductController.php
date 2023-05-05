@@ -9,7 +9,7 @@ class ProductController extends Controller
 {
     public function show ($id)
     {
-    $products= Product::with(relations: 'images','category')->find($id);
+    $products= Product::with( 'images','category')->find($id);
     return view(view:'site.product.show ',data: compact(var_name:'products'));
     }
 }

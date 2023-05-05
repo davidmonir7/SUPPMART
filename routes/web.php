@@ -1,6 +1,10 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Site\HomeController;
+use App\Http\Controllers\Site\ProductController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,7 +17,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-<<<<<<< HEAD
 
 Auth::routes();
 
@@ -23,8 +26,3 @@ Route::get('/product/{id}',[ProductController::class, 'show'])->name('product.sh
 
 
 // include('admin. php'); /* to include admin route or  badal go to route servce provider mohem  */
-=======
-Route::get('/', function () {
-    return view('welcome');
-});
->>>>>>> a58d3870e5e202a85bd092118e7da2b09098ea4c

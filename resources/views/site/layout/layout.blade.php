@@ -17,14 +17,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body>
-<<<<<<< HEAD
     <!-- start header -->
     <header class="p-3 bg-white text-black sticky-top">
-=======
    
      <!-- start header -->
      <header class="p-3 bg-white text-black sticky-top">
->>>>>>> 20b7ca1fc5246850e132bb56b47642182ac9c66d
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             </a>
@@ -72,12 +69,6 @@
             </ul>
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
                 <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
-<<<<<<< HEAD
-            </form>
-=======
-         
-            
->>>>>>> 20b7ca1fc5246850e132bb56b47642182ac9c66d
             <div class="text-end">
                 <button type="button" class="btn btn-outline-dark me-2" onclick="document.location='login.html'">Login</button>
                 <button type="button" class="btn btn-warning" onclick="document.location='Sign-up.html'">Sign-up</button>
@@ -86,23 +77,7 @@
         </div>
         </header>
         <!-- end header -->
-<<<<<<< HEAD
-    <script src="{{asset('site')}}/js/bootstrap.bundle.min.js"></script>
-    <script src="{{asset('site')}}/js/all.min.js"></script>
-    <script>
-        $(window).on('load', function () {
-            setTimeout(function () {
-                $('#exampleModal').modal('show');
-            }, 2500);
-        });
-        function openSearch() {
-            document.getElementById("search-overlay").style.display = "block";
-        }
-        function closeSearch() {
-            document.getElementById("search-overlay").style.display = "none";
-        }
-    </script>
-=======
+
 
 
     <script src="./site\assets\js\bootstrap.bundle.min.js"></script>
@@ -115,6 +90,6 @@
     @yield('body')
 </div>
 
->>>>>>> 20b7ca1fc5246850e132bb56b47642182ac9c66d
+
 </body>
 </html>

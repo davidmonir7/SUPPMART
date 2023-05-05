@@ -1,12 +1,8 @@
 @extends('site.layout.layout')
 
 @section('body')
-<<<<<<< HEAD
-<!doctype html>
-<body>
-=======
 
->>>>>>> 20b7ca1fc5246850e132bb56b47642182ac9c66d
+
     <!-- start header -->
     {{-- <header class="p-3 bg-white text-black sticky-top">
     <div class="container">
@@ -301,19 +297,12 @@
     <!-- end footer -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
-<<<<<<< HEAD
+
 </body>
 </html>
-=======
+
  
  @endsection
 
 
 
-
-
-
-
-
-
->>>>>>> 20b7ca1fc5246850e132bb56b47642182ac9c66d
