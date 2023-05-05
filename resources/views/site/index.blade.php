@@ -241,7 +241,7 @@
         <p> Less is more work </p>
         <div class="about-content">
         <div class="image">
-            <img src="images/about.jpg" alt="">
+            <img src="{{ asset('dashboard') }}/assets/site/images/about.jpg" alt="">
         </div>
         <div class="text">
             <p>Suppmart is a startup company that addresses the problems that all parents have; which is the school supplies shenanigans that take place at the beginning of every academic year. The company started as a group of friends that have younger siblings that are still in school; sharing the problems that they are facing in collecting all the supplies before school starts. They threw a few ideas in order to see if it leads them anywhere useful; and after months of brainstorming and seeing if they can actually achieve the idea they dreamt about, they came up with a solution that would help parents now and the parents to be.</p>
@@ -295,8 +295,7 @@
     </div>
     </div>
     <!-- end footer -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/all.min.js"></script>
+    
 
 </body>
 </html>
