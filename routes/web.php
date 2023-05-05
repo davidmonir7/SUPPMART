@@ -22,6 +22,7 @@ Auth::routes();
 
 Route::get('/index',[HomeController::class, 'index'])->name('index');
 Route::get('/product/{id}',[ProductController::class, 'show'])->name('product.show');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
 // include('admin. php'); /* to include admin route or  badal go to route servce provider mohem  */
