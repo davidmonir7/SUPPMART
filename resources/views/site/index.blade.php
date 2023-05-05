@@ -1,14 +1,13 @@
 @extends('site.layout.layout')
-
 @section('body')
 
-
+<body>
     <!-- start header -->
-    {{-- <header class="p-3 bg-white text-black sticky-top">
+    <header class="p-3 bg-white text-black fixed-top">
     <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         </a>
-        <img src="{{asset('site')}}images/logo.png" alt="" class="rounded-circle px-2" style="width: 50px;" >
+        <img src="public\site\assets\images\site image\pens-2-1238587.jpg" alt="" class="rounded-circle px-2" style="width: 50px;" >
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
             <li><a href="#" class="nav-link px-2 text-black link-warning " onclick="document.location='index.html'">Home</a></li>
             <li><a href="#services" class="nav-link px-2 text-black link-warning">Services</a></li>
@@ -55,25 +54,22 @@
         </form>
 
         <div class="text-end">
-            <button type="button" class="btn btn-outline-dark me-2" onclick="document.location='login.html'">Login</button>
+            <button type="button" class="btn btn-outline-light me-2" onclick="document.location='login.html'">Login</button>
             <button type="button" class="btn btn-warning" onclick="document.location='Sign-up.html'">Sign-up</button>
         </div>
         </div>
     </div>
     </header>
-    <!-- end header --> --}}
- <html>  <!-- start landing -->
-<body>
-    
-
-    <div class="landing">
-        <div class="overlay"></div>
+    <!-- end header -->
+    <!-- start landing -->
+    <div class="landing"> 
+        <div class="overlay"></div> 
             <div class="text">
                 <div class="content">
                     <h2>Hello ! <br> Get Ready to Have Such A Unique Experience With Us </h2>
                     <p>We have got your back. Here you will find all what you need from supplies. You don’t have to pay for useless supplies so you’re able to customize your package and you get only what you want . You can also get your child’s school
-                        supplies and choose their favorites without rolling around for a long time .
-                        All you have are in one place .
+                        supplies and choose their favorites without rolling around for a long time . 
+                        All you have are in one place . 
                         </p>
                 </div>
             </div>
@@ -126,10 +122,10 @@
                 </div>
             </div> -->
     </div>
-    <!-- third column-->
+    <!-- third column-->       
             <div class="col">
             <div class="image image-col">
-                <img src="{{asset('site')}}images/photo_2023-03-11_18-02-09.jpg" alt="">
+                <img src="public\site\assets\images\site image\pexels-cottonbro-studio-3951862.jpg" alt="">
             </div>
             </div>
         <!-- end services-->
@@ -139,101 +135,6 @@
 </div>
 </div>
 <!--end sevices section-->
-
-<!-- start products -->
-<div class="products" id="products">
-    <h1 class="special-heading">products</h1>
-    <p>get ready to create</p>
-    <div class="section-1">
-   @foreach ($products as $product) 
-    <div class="container">
-        <div class="box">
-            <a href="{{route('product.show',$product->id)}}">
-            <img src="{{($product->image)}}" alt=""></a>
-            <div class="content">
-                <h3> Test title</h3>
-                <p>{{$product->price}}</p>
-             
-            </div>
-            <div class="info">
-                <a href="{{route('product.show',$product->id)}}"> Add to cart </a>
-                <i class="fas fa-long-arrow-alt-right"></i>
-            </div>
-        </div>
-    @endforeach
-        {{-- <div class="box">
-            <a href="">
-            <img src="{{($product->image)}}" alt=""></a>
-            <div class="content">
-                <h3> Test title</h3>
-                <p>price:</p>
-            </div>
-            <div class="info">
-                <a href="{{route('product.show',$product->id)}}"> Add to cart </a>
-                <i class="fas fa-long-arrow-alt-right"></i>
-            </div>
-        </div>
-        @endforeach
-        <div class="box">
-            <img src="images/0720390009000.jpg" alt="">
-            <div class="content">
-                <h3> Test title</h3>
-                <p>price:</p>
-            </div>
-            <div class="info">
-                <a href="checkout.html"> Add to cart </a>
-                <i class="fas fa-long-arrow-alt-right"></i>
-            </div>
-        </div>
-        <div class="box">
-            <img src="images/pencil-new.jpg" alt="">
-            <div class="content">
-                <h3> Faber-Castell pencil </h3>
-                <p>price:</p>
-            </div>
-            <div class="info">
-                <a href="checkout.html"> Add to cart </a>
-                <i class="fas fa-long-arrow-alt-right"></i>
-            </div>
-        </div>
-        <div class="box">
-            <img src="images/cat-05.jpg" alt="">
-            <div class="content">
-                <h3> Test title</h3>
-                <p>price:</p>
-            </div>
-            <div class="info">
-                <a href="checkout.html"> Add to cart </a>
-                <i class="fas fa-long-arrow-alt-right"></i>
-            </div>
-        </div>
-        <div class="box">
-            <img src="images/cat-06.jpg" alt="">
-            <div class="content">
-                <h3> Test title</h3>
-                <p>price:</p>
-            </div>
-            <div class="info">
-                <a href="checkout.html"> Add to cart </a>
-                <i class="fas fa-long-arrow-alt-right"></i>
-            </div>
-        </div>
-        <div class="box">
-            <img src="images/cat-07.jpg" alt="">
-            <div class="content">
-                <h3> Test title</h3>
-                <p>price:</p>
-            </div>
-            <div class="info">
-                <a href="checkout.html"> Add to cart </a>
-                <i class="fas fa-long-arrow-alt-right"></i>
-            </div>
-        </div>
-   
-    </div>
-    </div>
-</div> --}}
-
 <!-- start about section -->
 <div class="about" id="about">
     <div class="container">
@@ -241,7 +142,7 @@
         <p> Less is more work </p>
         <div class="about-content">
         <div class="image">
-            <img src="{{ asset('dashboard') }}/assets/site/images/about.jpg" alt="">
+            <img src="assets/images/dashboard/user3.jpg" alt="">
         </div>
         <div class="text">
             <p>Suppmart is a startup company that addresses the problems that all parents have; which is the school supplies shenanigans that take place at the beginning of every academic year. The company started as a group of friends that have younger siblings that are still in school; sharing the problems that they are facing in collecting all the supplies before school starts. They threw a few ideas in order to see if it leads them anywhere useful; and after months of brainstorming and seeing if they can actually achieve the idea they dreamt about, they came up with a solution that would help parents now and the parents to be.</p>
@@ -252,12 +153,11 @@
         </div>
     </div>
     </div>
-
     <!-- start contact-->
     <div class="contact" id="contact">
     <div class="container">
     <h2 class="special-heading">
-        Contact
+        Contact 
     </h2>
     <p>We are born to create</p>
     <div class="content">
@@ -279,30 +179,21 @@
     </div>
     </div>
     </div>
-
     <!-- end contact-->
     <!-- start footer -->
    <div class="footer">
     <div class="container">
     &copy;2023 <span> SuppMart </span> All Right Reserved
-
+   
     <div class="social">
-        Find Us On Social Networks <br>
+        Find Us On Social Networks
         <i class="fa-brands fa-youtube"></i>
         <i class="fa-brands fa-facebook-f"></i>
         <i class="fa-brands fa-twitter"></i>
     </div>
-    </div>
-    </div>
-    <!-- end footer -->
-    <script src="{{ asset('dashboard') }}/assets/site/js/bootstrap.bundle.min.js"></script>
-    <script src="{{ asset('dashboard') }}/assets/site/js/all.min.js"></script>
-
+      </div>
+   </div>
+   <!-- end footer -->
+    {{-- <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script> --}}
 </body>
-</html>
-
- 
- @endsection
-
-
-

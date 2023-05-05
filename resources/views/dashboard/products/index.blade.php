@@ -65,7 +65,6 @@
                                             <th>التخفيض الأساسي</th>    
                                             <th>الالوان</th>
                                             <th>sizes</th>
-                                            <th>image</th>
                                             <th></th>
 
 
@@ -83,35 +82,11 @@
             </div>
         </div>
         <!-- Container-fluid Ends-->
-    </div>
-    </div>
-     {{-- delete --}}
-     <div class="modal fade" id="deletemodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-     aria-hidden="true">
-     <div class="modal-dialog">
-         <form action="{{ Route('dashboard.products.delete') }}" method="POST">
-             <div class="modal-content">
 
-                 <div class="modal-body">
-                     @csrf
-                     @method('DELETE')
-                     <div class="form-group">
-                         <p>متأكد من الحذف .. ؟؟</p>
-                         @csrf
-                         <input type="hidden" name="id" id="id">
-                     </div>
-                 </div>
-                 <div class="modal-footer">
-                     <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">اغلاق</button>
-                     <button type="submit" class="btn btn-danger">حذف </button>
-                 </div>
-             </div>
-         </form>
-         <!-- /.modal-content -->
-     </div>
-     <!-- /.modal-dialog -->
- </div>
- {{-- delete --}}
+
+
+    </div>
+    </div>
 @endsection
 
 
@@ -147,10 +122,6 @@
                     {
                         data: 'size',
                         name: 'size'
-                    },
-                    {
-                        data: 'image',
-                        name: 'image'
                     },
                     {
                         data: 'action',
