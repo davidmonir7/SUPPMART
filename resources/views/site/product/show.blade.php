@@ -11,7 +11,7 @@
             <p class="product-detail">
                 details: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum laudan
             </p>
-            <p>price: <span> 50 L.E</span></p>
+            <p>price: <span> {{$product->price}}</span></p>
             <a href="#">add to cart</a>
             <div class="social-media">
                 <h3>share via social media</h3>
@@ -24,7 +24,7 @@
 
         </div>
         <div class="image">
-            <img src="images/pencil.jpg" alt="">
+            <img src="{{ asset('dashboard') }}/assets/site/images/pencil.jpg" alt="">
         </div>
     </div>
 </div>
