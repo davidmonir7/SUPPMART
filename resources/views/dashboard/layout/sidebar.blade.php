@@ -3,9 +3,8 @@
     <div class="main-header-left d-none d-lg-block">
         <div class="logo-wrapper">
             <a href="{{route('admin')}}">
-                {{-- <img class="d-none d-lg-block blur-up lazyloaded" src="{{asset($setting->logo)}}"
-                    alt="" style="max-height: 125px"> --}}
-                    <H6>SUPPMART</H6>
+                <img class="d-none d-lg-block blur-up lazyloaded" src="{{asset($setting->logo)}}"
+                    alt="" style="max-height: 125px">
             </a>
         </div>
     </div>
@@ -23,7 +22,7 @@
             <li>
                 <a class="sidebar-header" href="{{route('admin')}}">
                     <i data-feather="home"></i>
-                    <span>dashboard</span>
+                    <span>لوحة التحكم</span>
                 </a>
             </li>
 
@@ -31,13 +30,13 @@
             <li>
                 <a class="sidebar-header" href="javascript:void(0)">
                     <i data-feather="folder"></i>
-                    <span>categories</span>
+                    <span>الأقسام</span>
                     <i class="fa fa-angle-right pull-right"></i>
                 </a>
                 <ul class="sidebar-submenu">
                     <li>
                         <a href="{{route('dashboard.categories.index')}}">
-                            <i class="fa fa-circle"></i>categories
+                            <i class="fa fa-circle"></i>الأقسام
                         </a>
                     </li>
                 </ul>
@@ -48,18 +47,18 @@
             <li>
                <a class="sidebar-header" href="javascript:void(0)">
                    <i data-feather="gift"></i>
-                   <span>products</span>
+                   <span>المنتجات</span>
                    <i class="fa fa-angle-right pull-right"></i>
                </a>
                <ul class="sidebar-submenu">
                    <li>
                        <a href="{{route('dashboard.products.index')}}">
-                           <i class="fa fa-circle"></i>products
+                           <i class="fa fa-circle"></i>المنتجات
                        </a>
                    </li>
                    <li>
                        <a href="{{route('dashboard.products.create')}}">
-                           <i class="fa fa-circle"></i> add product
+                           <i class="fa fa-circle"></i>اضافة منتج
                        </a>
                    </li>
                </ul>
@@ -70,13 +69,13 @@
             <li>
                <a class="sidebar-header" href="javascript:void(0)">
                    <i data-feather="shopping-cart"></i>
-                   <span>orders</span>
+                   <span>الطلبات</span>
                    <i class="fa fa-angle-right pull-right"></i>
                </a>
                <ul class="sidebar-submenu">
                    <li>
                        <a href="order.html">
-                           <i class="fa fa-circle"></i>orders
+                           <i class="fa fa-circle"></i>الطلبات
                        </a>
                    </li>
                    <li>
@@ -90,18 +89,18 @@
             <li>
                 <a class="sidebar-header" href="javascript:void(0)">
                     <i data-feather="tag"></i>
-                    <span>coupouns</span>
+                    <span>الكوبونات</span>
                     <i class="fa fa-angle-right pull-right"></i>
                 </a>
                 <ul class="sidebar-submenu">
                     <li>
                         <a href="coupon-list.html">
-                            <i class="fa fa-circle"></i>coupouns
+                            <i class="fa fa-circle"></i>الكوبونات
                         </a>
                     </li>
                     <li>
                         <a href="coupon-create.html">
-                            <i class="fa fa-circle"></i>create coupoun
+                            <i class="fa fa-circle"></i>إنشاء كوبون
                         </a>
                     </li>
                 </ul>
@@ -110,18 +109,18 @@
             <li>
                 <a class="sidebar-header" href="javascript:void(0)">
                    <i data-feather="user-plus"></i>
-                    <span> site members</span>
+                    <span>أعضاء الموقع</span>
                     <i class="fa fa-angle-right pull-right"></i>
                 </a>
                 <ul class="sidebar-submenu">
                     <li>
                         <a href="pages-list.html">
-                            <i class="fa fa-circle"></i>mangers
+                            <i class="fa fa-circle"></i>المديرين
                         </a>
                     </li>
                     <li>
                         <a href="page-create.html">
-                            <i class="fa fa-circle"></i>buyer
+                            <i class="fa fa-circle"></i>المشترين
                         </a>
                     </li>
                 </ul>
@@ -131,8 +130,8 @@
 
         
             <li>
-                <a class="sidebar-header" href="{{route('dashboard.settings.index')}}"><i data-feather="settings"></i><span>
-                        site option</span></a>
+                <a class="sidebar-header" href="{{route('dashboard.settings.index')}}"><i data-feather="settings"></i><span>اعدادات
+                        الموقع</span></a>
             </li>
 
         
@@ -140,7 +139,7 @@
             <li>
                 <a class="sidebar-header" href="login.html">
                     <i data-feather="log-in"></i>
-                    <span> Logout</span>
+                    <span>تسجيل الخروج</span>
                 </a>
             </li>
         </ul>
